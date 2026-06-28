@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="logo">Movie Rentals</div>
+
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Browse</a>
+      <a href="#" id="contactLink">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SEARCH SECTION -->
+  <section class="hero-search">
+    <h2>Top Rated Movies</h2>
+
+    <div class="search-controls">
+      <input type="text" id="searchInput" placeholder="Search by title, keyword...">
+
+      <select id="sortSelect">
+        <option value="az">A → Z</option>
+        <option value="za">Z → A</option>
+        <option value="newest">Newest → Oldest</option>
+        <option value="oldest">Oldest → Newest</option>
+        <option value="expensive">Most Expensive → Least</option>
+        <option value="cheap">Least Expensive → Most</option>
+      </select>
+
+      <select id="ratingFilter">
+        <option value="all">All Ratings</option>
+        <option value="9">9.0+</option>
+        <option value="8">8.0+</option>
+        <option value="7">7.0+</option>
+        <option value="6">6.0+</option>
+        <option value="5">5.0+</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- RESULTS COUNT -->
+  <section id="resultsCount" class="results-count"></section>
+
+  <!-- LOADING -->
+  <section id="loading" class="loading hidden">Loading...</section>
+
+  <!-- RESULTS GRID -->
+  <section id="results" class="results"></section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <p>© 2026 Joshua Kaufman — Movie Explorer</p>
+  </footer>
+
+  <!-- CONTACT MODAL -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <h2>Contact Us</h2>
+      <p>Have a question? Reach out below.</p>
+
+      <form id="contactForm">
+        <div class="form-item">
+          <label>Name</label>
+          <input type="text" required>
+        </div>
+
+        <div class="form-item">
+          <label>Email</label>
+          <input type="email" required>
+        </div>
+
+        <div class="form-item">
+          <label>Message</label>
+          <textarea required></textarea>
+        </div>
+
+        <button class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SCRIPT MUST BE LAST -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
